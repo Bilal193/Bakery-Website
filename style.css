@@ -1,0 +1,140 @@
+:root {
+    --mainPink: #ef7998;
+    --mainYellow: rgb(249, 228, 148);
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --yellowTrans: rgba(249, 228, 148, 0.5);
+    --mainGrey: rgb(238, 238, 238);
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.2rem;
+}
+
+.navbar {
+    background-color: var(--mainWhite) !important;
+}
+
+.cart-styling {
+    border: 0.1rem solid black;
+    color: black;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.cart-styling:hover {
+    color: var(--mainWhite);
+    background-color: var(--mainPink);
+    border-color: var(--mainPink);
+}
+
+.nav-link,
+.about {
+    color: var(--mainPink) !important;
+}
+
+.nav-link:hover {
+    color: var(--mainBlack) !important;
+}
+
+.nav-contact {
+    cursor: pointer;
+}
+
+.row-height {
+    height: calc(100vh - 76px);
+    background-image: linear-gradient(var(--yellowTrans),
+            var(--yellowTrans)),
+        url(images/headerBcg.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.button-css {
+    font-size: 1.5rem;
+    color: var(--mainBlack);
+    border: 0.2rem solid var(--mainBlack) !important;
+}
+
+.button-css:hover {
+    background-color: var(--mainBlack);
+    color: var(--mainPink);
+}
+
+.big {
+    color: var(--mainPink);
+    font-size: 4rem;
+}
+
+.h1-color {
+    color: var(--mainWhite);
+}
+
+.about-img_container {
+    position: relative;
+}
+
+.about-img_container::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid var(--mainYellow);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+
+.about-img_container:hover:before {
+    top: 0;
+    left: 0;
+}
+
+.btnpink {
+    background-color: var(--mainPink) !important;
+}
+
+.store-item-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.75rem;
+    background: var(--mainYellow);
+    border-top-left-radius: 1rem;
+    transition: all 1s ease-in-out;
+    transform: translate(100%, 100%);
+}
+
+.img-container:hover .store-item-icon {
+    transform: translate(0, 0);
+}
+
+.store-item-icon:hover {
+    color: var(--mainWhite);
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-container:hover .store-img {
+    transform: scale(1.2);
+}
+
+.store-img {
+    transition: all 1s ease-in-out;
+}
+
+#store {
+    background-color: var(--mainGrey);
+}
